@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "salary": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "companyAddress": {
+      "type": "text"
+    },
+    "location": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "customField",
+      "customField": "plugin::auto-locales-slug.auto-locales-slug",
+      "required": true,
+      "options": {
+        "pattern": "title"
+      }
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
