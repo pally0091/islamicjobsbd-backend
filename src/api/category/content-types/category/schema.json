@@ -13,14 +13,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "slug": {
-      "type": "customField",
-      "customField": "plugin::auto-locales-slug.auto-locales-slug",
-      "required": true,
-      "options": {
-        "pattern": "title"
-      }
     }
   }
 }

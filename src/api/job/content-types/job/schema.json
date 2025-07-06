@@ -14,31 +14,23 @@
     "title": {
       "type": "string"
     },
-    "salary": {
-      "type": "string"
+    "location": {
+      "type": "text"
     },
     "company": {
+      "type": "string"
+    },
+    "salary": {
       "type": "string"
     },
     "companyAddress": {
       "type": "text"
     },
-    "location": {
-      "type": "string"
+    "description": {
+      "type": "blocks"
     },
     "requirements": {
-      "type": "text"
-    },
-    "description": {
-      "type": "text"
-    },
-    "slug": {
-      "type": "customField",
-      "customField": "plugin::auto-locales-slug.auto-locales-slug",
-      "required": true,
-      "options": {
-        "pattern": "title"
-      }
+      "type": "blocks"
     },
     "category": {
       "type": "relation",

@@ -110,7 +110,6 @@ node_modules
 !.yarn/versions
 .pnp.*
 yarn-error.log
-package-lock.json
 
 ############################
 # Tests
@@ -130,3 +129,8 @@ dist
 build
 .strapi-updater.json
 .strapi-cloud.json
+
+# package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
